@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacts</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__menu menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#first-task">Операторы</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#second-task">IF ELSE</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#third-task">Циклы FOR и WHILE</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#four-task">Числа</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#five-task">Строки</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<script src="js/script.js"></script>
+			<section class="first-task" id="first-task">
+				<div class="first-task__container">
+					<h2 class="first-task__title title">
+						Операторы JAVASCRIPT
+					</h2>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">console</span>.log<span class="red">('35'+-"22")</span>;
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Не вірно, поверне 35-22 значення записано, як строка
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">console</span>.log<span class="red">('35'*"22")</span>;
+						</div>
+						<div class="task__item task-answer task-answer--good">
+							Відповідь вірна, оператор перетворить тип данних в число
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">console</span>.log<span class="red">('558'> 22++)</span>;
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Не вірно, декримент приміняють тільки до змінної
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>userCounter<span class="red">=
+									0;</span>;}</div>
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>newUsers = userCounter<span class="red">++
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(newUsers)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Результатом буде нуль, бо значення присвоюється значення до виконання операції оператором
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№5
+						</div>
+						<div class="task__item task-condition">
+							<span class="red">console</span>.log<span class="red">(!false && 11 || 18 && !'')</span>;
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Не вірно, перший операнд поверне значення true він і виведеться в консоль
+						</div>
+					</div>
+					<div class="first-task__task task">
+						<div class="task__item task-title">
+							//№6
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>name<span class="red">=
+									0</span>;}</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(name ?? "Без имени")
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Оператор поверне значення 0, бо це визначене значення не null / undefined
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="second-task" id="second-task">
+				<div class="second-task__container">
+					<h2 class="second-task__title title">
+						IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE.
+					</h2>
+					<div class="second-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">if </span>(1 === "1")<span
+									class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">('Истина!')
+								</span>;
+							</div>
+							<div class="task-condition__line"> <span class="red">} </span>else<span class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">('Ложь!')</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Відповідь буде "false"(при використанні суворе дорівнює), в консоль виведеться строка зі значенням
+							'Ложь!'
+						</div>
+					</div>
+					<div class="second-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">if </span>(5 == "5")<span class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">('Истина!')
+								</span>;
+							</div>
+							<div class="task-condition__line"> <span class="red">} </span>else<span class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">('Ложь!')</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Відповідь буде "true"(використовується не суворе дорівнює), в консоль виведеться строка зі
+							значенням 'Истина!'
+						</div>
+					</div>
+					<div class="second__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>message<span class="red"> = (92 >
+									'11' && 58 < 100)</span>? 'Истина!' : 'Ложь!';</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(message)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Відповідь буде "true" умова виконується
+						</div>
+					</div>
+					<div class="second-task__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">if </span>(0)<span class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">('Ложь!')
+								</span>;
+							</div>
+							<div class="task-condition__line"> <span class="red">} </span>else if ("")<span
+									class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">('Истина!')</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Перша умова не спрацює, бо 0 поверне "false", а значення (" "), так як строка не буде пустою,
+							поверне значення "true"
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="third-task" id="third-task">
+				<div class="third-task__container">
+					<h2 class="third-task__title title">
+						Циклы FOR и WHILE в JavaScript. Директивы break и continue.
+					</h2>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>numWhile<span class="red">=
+									5</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									while</span>(numWhile)<span class="red">{
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(numWhile)</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									numWhile</span> --<span class="red">
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>numDoWhile<span class="red">=
+									0</span>;
+							</div>
+							<div class="task-condition__line">
+								do<span class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(numDoWhile)</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									numWhile</span> ++<span class="red">
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">} </span>while<span class="red"> (numDoWhile < 5)</span>;
+							</div>
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>numFor;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									for</span>(numFor = 5; numFor > 0; numFor--)<span class="red">{
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(numWhile)</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Запис продубльовано в файлі script.js
+						</div>
+					</div>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>num<span class="red">=
+									8</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									while</span>(num)<span class="red">{
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(num)</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									num</span> --<span class="red">
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Останнім результатом буде 1, бо 0 поверне значення "false" і не буде виконуватись
+						</div>
+					</div>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>num<span class="red">=
+									3</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									while</span>(num < 3)<span class="red">{
+									</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(`Число: ${num}`)</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">
+									num</span> ++<span class="red">
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Запис продубльовано в файлі script.js
+						</div>
+					</div>
+					<div class="third-task__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-answer">
+							Запис зроблено в файлі script.js
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="four-task" id="four-task">
+				<div class="four-task__container">
+					<h2 class="four-task__title title">
+						Числа в JAVASCRIPT. Тип данных number. Работа с числами. проблема неточных вычислений.
+					</h2>
+					<div class="four__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>numOne<span class="red"> =
+									Math.round</span>(<span class="red">(1.005 + Number.EPSILON)</span> * 100) / 100);</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(message)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Для отримання вірної відповіді до вихідного числа потрібно додати Number.EPSILON
+						</div>
+					</div>
+					<div class="four__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>value<span class="red"> =
+									parseFloat("150.58px")</span>;</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(value)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Для отримання вірної відповіді до вихідного числа потрібно додати parseFloat
+						</div>
+					</div>
+					<div class="four__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>value<span class="red"> = 58 +
+									"Фрилансер"</span>;</div>
+							<div class="task-condition__line"> <span class="red">if </span>(isNaN)<span class="red">{</span>
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">('Результат выражения NaN')</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">}</span>
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Для отримання вірної відповіді до вихідного числа потрібно додати в умову спецыальну функцію
+							порівняння isNaN
+						</div>
+					</div>
+					<div class="four__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>maxNumber<span class="red"> =
+									Math.max(10, 58, 39, -150, 0)</span>;</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(maxNumber)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Відповідь вивелась в консоль
+						</div>
+					</div>
+					<div class="four__task task">
+						<div class="task__item task-title">
+							//№5
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>numbRound<span class="red"> =
+									Math.flour(58.858)</span>;</div>
+							<div class="task-condition__line">
+								<span class="red">
+									console</span>.log<span class="red">(numbRound)
+								</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							Відповідь вивелась в консоль
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="five-task" id="five-task">
+				<div class="five-task__container">
+					<h2 class="five-task__title title">
+						Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.
+					</h2>
+					<div class="five-task__task task">
+						<div class="task__item task-title">
+							//№1
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line"> <span class="red">let </span>fls<span class="red">=
+									"фрилансер"</span>;</div>
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>text <span class="red">= 'Привет! Я ${fls}'
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(text)</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Запис не вірний, бо для того щоб добавити вираз потрібно використовувати ``
+						</div>
+					</div>
+					<div class="five-task__task task">
+						<div class="task__item task-title">
+							//№2
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>textT <span class="red">= 'фрилансер'
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(textT.slice(-4, -3))</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							В записі строки допущена помилка, потрібно використовувати "".Відповідь записана в script.js
+						</div>
+					</div>
+					<div class="five-task__task task">
+						<div class="task__item task-title">
+							//№3
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>textS <span class="red">= 123 + "456"
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(textS)</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Відповідь буде 123456, бо вказані різні типи данних
+						</div>
+					</div>
+					<div class="five-task__task task">
+						<div class="task__item task-title">
+							//№4
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>textU <span class="red">= 'фрилансер'
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(textU.toUpperCase())</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							В записі строки допущена помилка, потрібно використовувати "".Відповідь записана в script.js
+						</div>
+					</div>
+					<div class="five-task__task task">
+						<div class="task__item task-title">
+							//№5
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>textLan <span class="red">= 'фрилансер'
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(textLan.slice(3, 6))</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer">
+							В записі строки допущена помилка, потрібно використовувати "".Відповідь записана в script.js
+						</div>
+					</div>
+					<div class="five-task__task task">
+						<div class="task__item task-title">
+							//№6
+						</div>
+						<div class="task__item task-condition">
+							<div class="task-condition__line">
+								<span class="red">
+									let </span>textOr <span class="red">= 'фрилансер'
+								</span>;
+							</div>
+							<div class="task-condition__line">
+								<span class="red">console</span>.log<span class="red">(textOr.includes('лан', 4))</span>;
+							</div>
+						</div>
+						<div class="task__item task-answer task-answer--bad">
+							Відповідь буде "false", бо при пошуці з 4-го символа, 'лан' знайдено не буде.Відповідь записана в
+							script.js
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
